@@ -429,11 +429,6 @@ h2 {
   font-size: 2rem;
   font-weight: normal; }
 
-@media screen and (max-width: 1360px) {
-  header, section, footer {
-    padding-left: 5%;
-    padding-right: 5%; } }
-
 .nav {
   list-style: none;
   display: -webkit-box;
@@ -532,20 +527,6 @@ header {
     height: 24px;
     cursor: pointer; }
 
-@media screen and (max-width: 900px) {
-  .mainnav li {
-    border: none;
-    margin-right: 10px;
-    margin-bottom: 5px; }
-  .mainnav a {
-    font-size: 1rem; } }
-
-@media screen and (max-width: 750px) {
-  header {
-    -webkit-flex-flow: column nowrap;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap; } }
-
 img {
   max-width: 100%; }
 
@@ -636,39 +617,6 @@ img {
   .contacts .email a {
     color: #00aeff; }
 
-@media screen and (max-width: 720px) {
-  .headline h1 {
-    font-size: 2rem; }
-  .feedback {
-    -webkit-flex-flow: column nowrap;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap; }
-  .form p {
-    width: 85%; }
-  .form input[type="text"], .form input[type="email"], .form textarea {
-    width: 80%; }
-  .form input[type="text"], .form input[type="email"] {
-    padding: 5px; }
-  .form input[type="submit"] {
-    width: 50%; } }
-
-@media screen and (max-width: 480px) {
-  .headline h1 {
-    font-size: 1.5rem; }
-  form {
-    -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch; }
-  .form input[type="text"], .form input[type="email"], .form textarea, .form p {
-    width: 100%; }
-  .form input[type="submit"] {
-    -webkit-align-self: center;
-        -ms-flex-item-align: center;
-                -ms-grid-row-align: center;
-            align-self: center;
-    width: 90%; } }
-
 footer {
   background-color: #31333e;
   display: -webkit-box;
@@ -704,6 +652,58 @@ footer {
 
 .contacts a:not(:last-child) {
   padding-right: 7px; }
+
+@media screen and (max-width: 1360px) {
+  header, section, footer {
+    padding-left: 5%;
+    padding-right: 5%; } }
+
+@media screen and (max-width: 900px) {
+  .mainnav li {
+    border: none;
+    margin-right: 10px;
+    margin-bottom: 5px; }
+  .mainnav a {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 750px) {
+  header {
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap; } }
+
+@media screen and (max-width: 720px) {
+  .headline h1 {
+    font-size: 2rem; }
+  .feedback {
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap; }
+  .form p {
+    width: 85%; }
+  .form input[type="text"], .form input[type="email"], .form textarea {
+    width: 80%; }
+  .form input[type="text"], .form input[type="email"] {
+    padding: 5px; }
+  .form input[type="submit"] {
+    width: 50%; } }
+
+@media screen and (max-width: 480px) {
+  .headline h1 {
+    font-size: 1.5rem; }
+  form {
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch; }
+  .form input[type="text"], .form input[type="email"], .form textarea, .form p {
+    width: 100%; }
+  .form input[type="submit"] {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    width: 90%; } }
 
 @media screen and (max-width: 450px) {
   .footernav li {

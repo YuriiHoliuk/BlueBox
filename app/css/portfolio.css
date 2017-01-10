@@ -429,11 +429,6 @@ h2 {
   font-size: 2rem;
   font-weight: normal; }
 
-@media screen and (max-width: 1360px) {
-  header, section, footer {
-    padding-left: 5%;
-    padding-right: 5%; } }
-
 h2 {
   color: #fff; }
 
@@ -537,20 +532,6 @@ header {
     width: 20px;
     height: 24px;
     cursor: pointer; }
-
-@media screen and (max-width: 900px) {
-  .mainnav li {
-    border: none;
-    margin-right: 10px;
-    margin-bottom: 5px; }
-  .mainnav a {
-    font-size: 1rem; } }
-
-@media screen and (max-width: 750px) {
-  header {
-    -webkit-flex-flow: column nowrap;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap; } }
 
 #design {
   background-color: #908ef3; }
@@ -678,35 +659,21 @@ footer {
 .contacts a:not(:last-child) {
   padding-right: 7px; }
 
-@media screen and (max-width: 450px) {
-  .footernav li {
-    border: none;
-    margin-right: 15px;
-    margin-bottom: 10px; }
-  footer .copyright {
-    font-size: 0.8rem; } }
-
 @media screen and (max-width: 1360px) {
+  header, section, footer {
+    padding-left: 5%;
+    padding-right: 5%; }
   .headline {
     padding-left: 5%;
     padding-right: 5%; } }
 
-@media screen and (max-width: 1150px) {
-  .container {
-    -webkit-flex-flow: column nowrap;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap; }
-    .container .item {
-      text-align: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      margin-bottom: 20px; }
-      .container .item p {
-        width: 60%; } }
-
 @media screen and (max-width: 900px) {
+  .mainnav li {
+    border: none;
+    margin-right: 10px;
+    margin-bottom: 5px; }
+  .mainnav a {
+    font-size: 1rem; }
   .container .item p {
     width: 90%; }
   section {
@@ -716,3 +683,32 @@ footer {
     font-size: 2.2rem; }
   h2 {
     font-size: 1.8rem; } }
+
+@media screen and (max-width: 750px) {
+  header {
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap; } }
+
+@media screen and (max-width: 450px) {
+  .footernav li {
+    border: none;
+    margin-right: 15px;
+    margin-bottom: 10px; }
+  footer .copyright {
+    font-size: 0.8rem; } }
+
+@media screen and (max-width: 1150px) {
+  .container {
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap; }
+  .container .item {
+    text-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 20px; }
+  .container .item p {
+    width: 60%; } }
