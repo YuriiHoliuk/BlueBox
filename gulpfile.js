@@ -76,12 +76,11 @@ gulp.task('img', function() {
 
 gulp.task('buildHtml', function() {
     return gulp.src('src/*.html')
-        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(''))
 })
 
 gulp.task('buildCss', function() {
-    return gulp.src(['src/css/*.min.css'])
+    return gulp.src(['src/css/*.css'])
         .pipe(gulp.dest('css/'))
 })
 
