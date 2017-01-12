@@ -60,7 +60,7 @@ gulp.task('watch', ['browser-sync', 'css-min', 'scripts'], function() {
 });
 
 gulp.task('clean', function() {
-    return del.sync('dist');
+    return del.sync(['css', 'js', 'img', 'fonts', '*.html']);
 });
 
 gulp.task('img', function() {
@@ -71,33 +71,33 @@ gulp.task('img', function() {
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         }))
-        .pipe(gulp.dest('dist/img/'));
+        .pipe(gulp.dest('img/'));
 });
 
 gulp.task('buildHtml', function() {
     return gulp.src('src/*.html')
         .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest('dist/'))
+        .pipe(gulp.dest(''))
 })
 
 gulp.task('buildCss', function() {
     return gulp.src(['src/css/*.min.css'])
-        .pipe(gulp.dest('dist/css/'))
+        .pipe(gulp.dest('css/'))
 })
 
 gulp.task('buildFonts', function() {
     return gulp.src(['src/fonts/*.*'])
-        .pipe(gulp.dest('dist/fonts/'))
+        .pipe(gulp.dest('fonts/'))
 })
 
 gulp.task('buildJs', function() {
     return gulp.src(['src/js/*.js'])
-        .pipe(gulp.dest('dist/js/'))
+        .pipe(gulp.dest('js/'))
 })
 
 gulp.task('buildImg', function() {
     return gulp.src(['src/img/*.+(jpg|png|svg)'])
-        .pipe(gulp.dest('dist/img/'))
+        .pipe(gulp.dest('img/'))
 })
 
 
